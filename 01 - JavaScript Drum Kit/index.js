@@ -24,6 +24,8 @@ removeTransition = (e) => {
 };
 
 const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // adding event listener to each dom node
+keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // adding event listener to each dom node key
+
+//transitionend is a good way to listen for the end of a transition, there's also animationend which may be useful in the future
 
 window.addEventListener('keydown', playSound);
